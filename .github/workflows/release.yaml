@@ -1,11 +1,11 @@
 # https://github.com/marketplace/actions/go-release-binaries
 on:
-  push:
-    tags:        
-      - '*'
-    branches:
-      - dev
-      - main
+  #push:
+  #  tags:        
+  #    - '*'
+  #  branches:
+  #    - dev
+  #    - main
   release:
     types: [created]
 
