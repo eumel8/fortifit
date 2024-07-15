@@ -5,7 +5,6 @@ import (
 	"crypto/tls"
 	"flag"
 	cfg "github.com/eumel8/fortifit/conf"
-	"github.com/eumel8/fortifit/boot"
 	glb "github.com/eumel8/fortifit/global"
 	"github.com/eumel8/fortifit/utils"
 	"github.com/mvdan/xurls"
@@ -141,13 +140,6 @@ func configure() {
 				log.Println("Your password has been encrypted automatically")
 			}
 		}
-	}
-
-	// Auto start when computer booting up
-	if cfg.Fit.AutoStartup {
-		boot.EnableAutoStartup()
-	} else {
-		boot.DisableAutoStartup()
 	}
 
 	cfg.WriteToFile()
