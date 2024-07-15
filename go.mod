@@ -3,6 +3,7 @@ module main
 go 1.22.1
 
 require (
+	github.com/eumel8/fortifit v0.0.0-20170718110513-2d163eec4137
 	github.com/go-ole/go-ole v1.3.0
 	github.com/lnquy/fit v0.0.0-20170718110513-2d163eec4137
 	github.com/mvdan/xurls v1.1.0
