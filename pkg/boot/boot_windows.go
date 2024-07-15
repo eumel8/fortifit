@@ -3,7 +3,7 @@ package boot
 import (
 	"github.com/go-ole/go-ole"
 	"github.com/go-ole/go-ole/oleutil"
-	"github.com/lnquy/fit/utils"
+	"github.com/eumel8/fortifit/utils"
 	"log"
 	"os"
 	"path"

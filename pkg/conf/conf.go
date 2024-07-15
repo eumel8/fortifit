@@ -2,7 +2,7 @@ package conf
 
 import (
 	"encoding/json"
-	glb "github.com/lnquy/fit/modules/global"
+	glb "github.com/eumel8/fortyfit/global"
 	"io/ioutil"
 	"log"
 	"os"
