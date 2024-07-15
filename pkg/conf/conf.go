@@ -2,7 +2,7 @@ package conf
 
 import (
 	"encoding/json"
-	glb "github.com/eumel8/fortifit/global"
+	glb "github.com/eumel8/fortifit/pkg/global"
 	"io/ioutil"
 	"log"
 	"os"
