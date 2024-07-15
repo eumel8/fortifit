@@ -3,9 +3,9 @@ on:
   push:
     tags:        
       - '*'
-  branches:
-    - dev
-    - main
+    branches:
+      - dev
+      - main
   release:
     types: [created]
 
