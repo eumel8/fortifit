@@ -4,10 +4,9 @@ import (
 	"bytes"
 	"crypto/tls"
 	"flag"
-	cfg "github.com/lnquy/fit/conf"
-	"github.com/lnquy/fit/modules/boot"
-	glb "github.com/lnquy/fit/modules/global"
-	"github.com/lnquy/fit/utils"
+	cfg "github.com/eumel8/fortifit/pkg/conf"
+	glb "github.com/eumel8/fortifit/pkg/global"
+	"github.com/eumel8/fortifit/pkg/utils"
 	"github.com/mvdan/xurls"
 	"io"
 	"io/ioutil"
@@ -141,13 +140,6 @@ func configure() {
 				log.Println("Your password has been encrypted automatically")
 			}
 		}
-	}
-
-	// Auto start when computer booting up
-	if cfg.Fit.AutoStartup {
-		boot.EnableAutoStartup()
-	} else {
-		boot.DisableAutoStartup()
 	}
 
 	cfg.WriteToFile()

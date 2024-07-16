@@ -2,6 +2,7 @@
 *.exe
 vendor
 build
+fortifit
 etc/fit.log
 etc/fit.bin
 etc/fit
